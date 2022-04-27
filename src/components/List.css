@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+    margin-top:8rem;
+}
+tr,td{
+    padding:1rem;
+    text-align: left;
+    
+}
+td a{
+    text-decoration: none;
+    color:white;
+}
+th{
+    text-align: center;
+    text-decoration:underline;
+}
+tr:nth-child(even){
+    background-color:darkslateblue;
+}
