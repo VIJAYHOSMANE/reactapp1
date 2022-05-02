@@ -1,13 +1,9 @@
-import React from "react";
-
-const Search = () =>{
-    function handlechange(event :any){
-        console.log("value is",event.target.value);
-    }
-    return(
+const Search = ({ onChange, searchText }: any) => {
+  return (
     <div>
-        <input  type="text" placeholder="Search Here" onChange={handlechange}/>
+      <input type="text" placeholder="Search Here" onChange={onChange} />
+      <p>{searchText}</p>
     </div>
-    );
+  );
 };
 export default Search;
